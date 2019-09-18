@@ -1,0 +1,8 @@
+{
+  "APIDetails": {
+    "uri": "https://autorqa.events.epam.com/",
+    "path": "api/v2/events",
+    "paramName": "search",
+    "paramValue": "EventTitle"
+  }
+}

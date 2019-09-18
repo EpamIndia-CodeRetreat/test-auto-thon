@@ -1,0 +1,39 @@
+{
+	"APIDetails": {
+		"uri": "https://autorqa.events.epam.com/",
+		"path": "api/v2/events",
+		"paramName": "search",
+		"paramValue": "EventTitle",
+		"details": {
+			"type[0]": "Main",
+			"properties.text[0].type[0] ": "title",
+			"properties.text[0].text[0]": "GlobalVariables.eventTitle",
+			"properties.details.is_past[0]": "false",
+			"properties.details.dates[0]": "GlobalVariables.date",
+			"properties.event_url[0]": "<event_url>"
+		},
+		"proposed-talks": {
+			"type[0]": "ProposedTalks",
+			"properties.event_title[0]": "GlobalVariables.eventTitle",
+			"properties.main_block_properties.text[0].type[0]": "title",
+			"properties.main_block_properties.text[0].text[0]": "GlobalVariables.eventTitle",
+			"properties.main_block_properties.details.is_past[0]": "false",
+			"properties.main_block_properties.details.dates[0]": "GlobalVariables.date",
+			"properties.main_block_properties.event_url[0]": "<event_url>"
+		},
+		"agenda": {
+			"type[0]": "Agenda",
+			"properties.text[0].type[0]": "main",
+			"properties.text[0].text[0]": "Agenda",
+			"properties.text[0].type[1]": "description",
+			"properties.text[0].text[1]": ""
+		},
+		"speakers": {
+			"type[0]": "Speakers",
+			"properties.text[0].type[0]": "main",
+			"properties.text[0].text[0]": "Speakers",
+			"properties.text[0].type[1]": "description",
+			"properties.text[0].text[1]": "Listen stories from people who are behind the latest technologies, business trends and innovations."
+		}
+	}
+}

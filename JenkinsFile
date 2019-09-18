@@ -1,0 +1,20 @@
+node {
+    stage('Checkout') {
+        // Configure Repository and credentials in Jenkins
+        checkout scm
+    }
+    
+    stage('Run Feature') {
+          dir('Frmwk_CWD') {
+                if (isUnix()) {
+                    sh 'mvn clean test -Dsuite.name=testng.xml -Denv=sqe'
+                } else {
+                    bat 'mvn clean test -Dsuite.name=testng.xml -Denv=sqe'
+                }
+            }
+    }
+    
+    stage('Store Results') {
+        archiveArtifacts 'Frmwk_CWD/Results/**/*.*'
+    }
+}

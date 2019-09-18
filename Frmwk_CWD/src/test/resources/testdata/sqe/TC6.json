@@ -1,0 +1,19 @@
+{
+  "PageValidations": {
+    "Details": {
+      "Title": "EventTitle",
+      "Dates": "EventDate"
+    },
+    "Proposed talks": {
+      "Title": "EventTitle",
+      "Dates": "EventDate"
+    },
+    "Speakers": {
+      "PageTitle": "Speakers",
+      "PageDescription": "Listen stories from people who are behind the latest technologies, business trends and innovations."
+    },
+    "Agenda": {
+      "PageTitle": "Agenda"
+    }
+  }
+}
